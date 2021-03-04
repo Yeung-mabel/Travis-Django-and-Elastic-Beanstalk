@@ -4,6 +4,6 @@
 
 2. .travis.yml enter the access_key_id and secret_access_key
 
-*This program still have some problems need to fix
+This program still have some problems need to fix
 
-*On the AWS Elastic Beanstalk the environment does not work 
+On the AWS Elastic Beanstalk the environment does not work 
