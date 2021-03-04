@@ -1,0 +1,26 @@
+language: python
+python:  
+  - "3.7"
+
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+
+# command to run tests
+script:
+  - python manage.py test
+
+deploy:
+  only_create_app_version: "flase"
+  provider: elasticbeanstalk
+  access_key_id: "XXXXXXXXXXX"
+  secret_access_key: "XXXXXXXXXXXXXX"
+  region: "ap-east-1" #Hong Kong
+  app: "example-app-name"
+  env: "Exampleappname-env"
+  bucket_name: "elasticbeanstalk-ap-east-1-919417278108"  # AWS S3 bucket name
+  
+
+
+
+
